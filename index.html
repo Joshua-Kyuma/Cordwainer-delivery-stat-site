@@ -1,16 +1,24 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--bootstrap css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
-    <title>Cordwainer</title>
-    <link rel="icon" type="images/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/8054510657.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+    </style>
+
+  <!--bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Cordwainer</title>
+  <link rel="icon" type="images/x-icon" href="favicon.ico">
 </head>
+
 <body>
-    
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Cordwainer corporate Delivery</a>
@@ -41,245 +49,240 @@
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li> -->
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
 
-      <!-- table -->
-      
-      <table class="table">
+    <!-- Search Bar Section -->
+    <form class="d-flex">
+        <input type="text search" class="form-control me-2" id="searchInput" placeholder="Search..." aria-label="Search" onkeyup="searchTable()">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</div>
+</div>
+</nav>
+
+    <!-- Table Section -->
+    <table class="table" id="dataTable">
         <thead>
-          <tr>
-            <th scope="col">Route Number</th>
-            <th scope="col">From</th>
-            <th scope="col">To</th>
-            <th scope="col">Cost</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Town</td>
-            <td>Athi-River</td>
-            <td>KES 1000.00</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Town</td>
-            <td>Buruburu</td>
-            <td>KES 350.00</td>
-          </tr>
-          <tr>
-             <th scope="row">3</th>
-             <td >CBD</td>
-             <td>Cabanas</td>
-             <td>KES 500.00</td>
-            </tr>
-          <tr>
-             <th scope="row">4</th>
-             <td >CBD</td>
-             <td>Donholm</td>
-             <td>KES 400.00</td>
-           </tr>
-           <tr>
-            <th scope="row">5</th>
-            <td>CBD</td>
-            <td>Embakasi</td>
-            <td>KES 500.00</td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>CBD</td>
-            <td>Fedha/Pipeline</td>
-            <td>KES 400.00</td>
-          </tr>
-          <tr>
-            <th scope="row">7</th>
-            <td>CBD</td>
-            <td>Galleria</td>
-            <td>KES 500.00</td>
-          </tr>
-          <tr>
-            <th scope="row">8</th>
-            <td>CBD</td>
-            <td>Industrial Area</td>
-            <td>KES 300.00</td>
-          </tr>
-          <tr>
-            <th scope="row">9</th>
-            <td>CBD</td>
-            <td>Juja</td>
-            <td>KES 1000.00</td>
-          </tr>
-          <tr>
-            <th scope="row">10</th>
-            <td>CBD</td>
-            <td>Kiambu</td>
-            <td>KES 500.00</td>
-          </tr>
-          <tr>
-            <th scope="row">11</th>
-            <td>CBD</td>
-            <td>Kitengela</td>
-            <td>KES 1200.00</td>
-          </tr>
             <tr>
-            <th scope="row">12</th>
-            <td>CBD</td>
-            <td>Langata</td>
-            <td>KES 300.00</td>
-          </tr>
-          <tr>
-            <th scope="row">12</th>
-            <td>CBD</td>
-            <td>Mlolongo</td>
-            <td>KES 600.00</td>
-          </tr>
-          <tr>
-            <th scope="row">13</th>
-            <td>CBD</td>
-            <td>Ngong Road-Bypass</td>
-            <td>KES 400.00</td>
-          </tr>
-          <tr>
-            <th scope="row">14</th>
-            <td>CBD</td>
-            <td>Kilimani</td>
-            <td>KES 300.00</td>
-          </tr>
-          <tr>
-            <th scope="row">15</th>
-            <td>CBD</td>
-            <td>Karen Centre</td>
-            <td>KES 500.00</td>
-          </tr>
-          <tr>
-            <th scope="row">16</th>
-            <td>CBD</td>
-            <td>Kikuyu</td>
-            <td>KES 850.00</td>
-          </tr>
-          <tr>
-            <th scope="row">17</th>
-            <td>CBD</td>
-            <td>Lang'ata</td>
-            <td>KES 400.00</td>
-          </tr>
-          <tr>
-            <th scope="row">18</th>
-            <td>CBD</td>
-            <td>Lower Kabete</td>
-            <td>KES 500.00</td>
-          </tr>
-          <tr>
-            <th scope="row">19</th>
-            <td>CBD</td>
-            <td>Ngong</td>
-            <td>KES 400.00</td>
-          </tr>
-          <tr>
-            <th scope="row">20</th>
-            <td>CBD</td>
-            <td>Past Trm-Ruiru</td>
-            <td>KES 500.00</td>
-          </tr>
-          <tr>
-            <th scope="row">21</th>
-            <td>CBD</td>
-            <td>Past Karen-Rongai</td>
-            <td>KES 850.00</td>
-          </tr>
-          <tr>
-            <th scope="row">22</th>
-            <td>CBD</td>
-            <td>Ruaka</td>
-            <td>KES 450.00</td>
-          </tr>
-          <tr>
-            <th scope="row">23</th>
-            <td>CBD</td>
-            <td>Syokimau</td>
-            <td>KES 600.00</td>
-          </tr>
-          <tr>
-            <th scope="row">24</th>
-            <td>CBD</td>
-            <td>Thika Road-Trm</td>
-            <td>KES 400.00</td>
-          </tr>
-          <tr>
-            <th scope="row">25</th>
-            <td>CBD</td>
-            <td>Utawala</td>
-            <td>KES 700.00</td>
-          </tr>
-          <tr>
-            <th scope="row">26</th>
-            <td>CBD</td>
-            <td>Waiyaki Way-Uthiru</td>
-            <td>KES 500.00</td>
-          </tr>
-          <tr>
-            <th scope="row">27</th>
-            <td>CBD</td>
-            <td>Westlands/Parklands</td>
-            <td>KES 300.00</td>
-          </tr>
-          <tr>
-            <th scope="row">28</th>
-            <td>CBD</td>
-            <td>kamulu</td>
-            <td>KES 1000.00</td>
-          </tr>
-          <tr>
-            <th scope="row">29</th>
-            <td>CBD</td>
-            <td>Njiru</td>
-            <td>KES 800.00</td>
-          </tr>
-          <tr>
-            <th scope="row">30</th>
-            <td>CBD</td>
-            <td>Ngara</td>
-            <td>KES 250.00</td>
-          </tr>
-          <tr>
-            <th scope="row">31</th>
-            <td>CBD</td>
-            <td>South B</td>
-            <td>KES 300.00</td>
-          </tr>
-          <tr>
-            <th scope="row">32</th>
-            <td>CBD</td>
-            <td>South C</td>
-            <td>KES 300.00</td>
-          </tr>
-          <tr>
-            <th scope="row">33</th>
-            <td>CBD</td>
-            <td>Eastleigh</td>
-            <td>KES 300.00</td>
-          </tr>
-          <tr>
-            <th scope="row">34</th>
-            <td>CBD</td>
-            <td>Umoja</td>
-            <td>KES 400.00</td>
-          </tr>
-
-          
-                
+              <th scope="col">Route Number</th>
+              <th scope="col">From</th>
+              <th scope="col">To</th>
+              <th scope="col">Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>Town</td>
+              <td>Athi-River</td>
+              <td>KES 1000.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Town</td>
+              <td>Buruburu</td>
+              <td>KES 350.00</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td >CBD</td>
+               <td>Cabanas</td>
+               <td>KES 500.00</td>
+              </tr>
+            <tr>
+               <td></td>
+               <td >CBD</td>
+               <td>Donholm</td>
+               <td>KES 400.00</td>
+             </tr>
+             <tr>
+                <td></td>
+                <td>CBD</td>
+                <td>Eastleigh</td>
+                <td>KES 300.00</td>
+              </tr>
+             <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Embakasi</td>
+              <td>KES 500.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Fedha/Pipeline</td>
+              <td>KES 400.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Galleria</td>
+              <td>KES 500.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Industrial Area</td>
+              <td>KES 300.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Juja</td>
+              <td>KES 1000.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>CBD</td>
+                <td>kamulu</td>
+                <td>KES 1000.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Kiambu</td>
+              <td>KES 500.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Kitengela</td>
+              <td>KES 1200.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>CBD</td>
+                <td>Kilimani</td>
+                <td>KES 300.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>CBD</td>
+                <td>Karen Centre</td>
+                <td>KES 500.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>CBD</td>
+                <td>Kikuyu</td>
+                <td>KES 850.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>CBD</td>
+                <td>Lang'ata</td>
+                <td>KES 300.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>CBD</td>
+                <td>Lower Kabete</td>
+                <td>KES 500.00</td>
+              </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Mlolongo</td>
+              <td>KES 600.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>CBD</td>
+                <td>Ngara</td>
+                <td>KES 250.00</td>
+              </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Ngong Road-Bypass</td>
+              <td>KES 400.00</td>
+            </tr>
             
-        </tbody>
-      </table>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Ngong</td>
+              <td>KES 850.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>CBD</td>
+                <td>Njiru</td>
+                <td>KES 800.00</td>
+              </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Past Trm-Ruiru</td>
+              <td>KES 500.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Past Karen-Rongai</td>
+              <td>KES 850.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Ruaka</td>
+              <td>KES 450.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Syokimau</td>
+              <td>KES 600.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Thika Road-Trm</td>
+              <td>KES 400.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Utawala</td>
+              <td>KES 700.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Waiyaki Way-Uthiru</td>
+              <td>KES 500.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Westlands/Parklands</td>
+              <td>KES 300.00</td>
+            </tr>       
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>South B</td>
+              <td>KES 300.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>South C</td>
+              <td>KES 300.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CBD</td>
+              <td>Umoja</td>
+              <td>KES 400.00</td>
+            </tr>
+  
+            
+                  
+              
+          </tbody>
+    </table>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
 </body>
 </html>
