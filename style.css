@@ -1,9 +1,50 @@
+  
+.tourney {
+    font-family: "Tourney", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  .special-elite-regular {
+    font-family: "Special Elite", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .tulpen-one-regular {
+    font-family: "Tulpen One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .aldrich-regular {
+    font-family: "Aldrich", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .navbar-collapse{
+    font-family: "Special Elite", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .codi{
     margin: 50px;
+}
+thead{
+    font-family: "Tulpen One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: blueviolet;
+    font-size: 170%;
 }
 .table{
     border-style: double;
     border-radius: 6px;
+    font-family: "Aldrich", serif;
+    font-weight: 400;
+    font-style: normal;
     
     margin-right: 50px 50px 50px 50px;
 }
@@ -12,4 +53,5 @@
 }
 .tutao{
     margin: 50px;
+    
 }
